@@ -1,0 +1,17 @@
+name: npc1-abm
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pandas
+  - numpy
+  - matplotlib
+  - networkx
+  - tqdm
+  - scikit-learn
+  - scipy
+  - opencv
+  - pip
+  - pip:
+      - natsort
