@@ -7,8 +7,13 @@ This repository contains the agent-based model (ABM) implementation used in the 
 Juseong Kim, Kwang Su Kim, Ayato Takada, Yusuke Asai, Shingo Iwami, Seung-Woo Son, Mi Jin Lee
 DOI: https://doi.org/10.1101/2025.03.13.642967
 
+
+
+_____
+
 - plaque growing simulation
 
+_____
 
 
 ├── model/              # Core ABM implementation
