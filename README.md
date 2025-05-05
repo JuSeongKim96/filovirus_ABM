@@ -12,7 +12,11 @@ DOI: https://doi.org/10.1101/2025.03.13.642967
 
 
 ├── model/              # Core ABM implementation
+
 ├── data/               # Input/output data (e.g., parameter sets, snapshots)
+
 ├── figures/            # Generated plots or images
+
 ├── utils/              # Utility functions
+
 └── main.py             # Entry point to run simulations
