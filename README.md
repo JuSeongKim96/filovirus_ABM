@@ -16,14 +16,12 @@ _____
 _____
 
 
-├── notebooks/              # Core ABM implementation
-  
-  ├── utils.py/              # Utility functions
-  
-  └── model.py             # Entry point to run simulations
+- notebooks/              # Core ABM implementation
+  - utils.py/              # Utility functions
+  - model.py             # Entry point to run simulations
 
-├── data/               # Input/output data (e.g., parameter sets, snapshots)
+-  data/               # Input/output data (e.g., parameter sets, snapshots)
 
-├── result/            # Generated plots or images
+-  result/            # Generated plots or images
 
 
