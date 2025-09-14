@@ -180,11 +180,11 @@ def SEID_model(H, S, E, I, D, interval, beta, ps=None):
     # # I -> D parameter 회복률 -> 몇일 지나면 더이상 바이러스 못 시키는지로 바꿔야됨
     # gamma = 24/(27*(interval-1))
 
-    alpha = 1 * (24/(interval-1))# 초단위로 바꿔보자
+    alpha = 2 * (24/(interval-1))# 초단위로 바꿔보자
     # I -> D parameter 회복률 -> 몇일 지나면 더이상 바이러스 못 시키는지로 바꿔야됨
     # gamma =4.5 * (24/(interval-1))/27 # 27시간으로 가정했으면
 
-    gamma = 1 * 4.5/27 * (24/(interval-1)) # 27시간으로 가정했으면
+    gamma = 2 * 4.5/27 * (24/(interval-1)) # 27시간으로 가정했으면
 
     
 
