@@ -28,22 +28,21 @@ The implementation supports both **batch simulations** and **interactive Jupyter
 filovirus_ABM/
 │
 ├── notebooks/              # Core ABM implementations
-│   ├── simulation.ipynb          # Main simulation workflow
-│   ├── visualization.ipynb       # Plaque & infection visualizations
-│   └── parameter_analysis.ipynb  # Sensitivity / parameter studies
-│
-├── utils.py                # Utility functions for random seeds, diffusion, statistics
-├── model.py                # Entry point to run simulations
+│   ├── Sim.ipynb          # Main simulation workflow
+│   ├── model.py       # infection process
+│   └── utils.py  # Utility functions
 │
 ├── data/
-│   ├── params.json         # Parameter sets used in experiments
-│   ├── snapshots/          # Saved simulation states (optional)
-│   └── measurements.csv    # Experimental reference data
+│   ├── Angola         # Marburg virus radius data
+│   ├── Zaire          # Ebola virus radius data
+│   ├── Triangle       # Optimal beta in triangle lattice
+│   └── Rectangle      # Optimal beta in rectangle lattice
 │
 ├── result/
-│   ├── plaque_growth.png
-│   ├── infection_dynamics.png
-│   └── heatmap_entry_efficiency.png
+│   ├── Fig3.png                  # Entry efficiency
+│   ├── best_beta_fit             # Best beta fitting radius 
+│   ├── Zaire_error_function.png  # Optimal beta
+│   └── Angola_error_function.png # Optimal beta
 │
 └── README.md
 ```
@@ -63,41 +62,11 @@ pip install -r requirements.txt
 
 ---
 
-## ▶️ Running a Simulation
-
-```bash
-python model.py --steps 1000 --npc1_variant WT
-```
-
-### Optional Flags
-
-| Flag | Description |
-|------|-------------|
-| `--steps` | Number of simulation steps |
-| `--grid_size` | Size of the cell monolayer grid |
-| `--npc1_variant` | NPC1 genotype (e.g., WT, SNP1, SNP2) |
-| `--save_snapshots` | Save intermediate images |
-| `--seed` | Random seed |
-
-Example:
-
-```bash
-python model.py --steps 1500 --grid_size 250 --npc1_variant SNP1 --save_snapshots
-```
-
----
-
 ## 📓 Using Jupyter Notebooks
 
 ```bash
 jupyter notebook notebooks/simulation.ipynb
 ```
-
-Available notebooks:
-
-- **simulation.ipynb** – full plaque growth simulation  
-- **visualization.ipynb** – heatmaps, plaque radius tracking, infection patterns  
-- **parameter_analysis.ipynb** – parameter sweeps and sensitivity analysis  
 
 ---
 
