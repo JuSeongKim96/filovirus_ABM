@@ -95,16 +95,6 @@ jupyter notebook notebooks/simulation.ipynb
 
 ---
 
-## 📊 Example Outputs
-
-### **Plaque Growth Over Time**
-![plaque_growth](result/plaque_growth.png)
-
-### **Infection Dynamics**
-![infection_dynamics](result/infection_dynamics.png)
-
----
-
 ## 📚 Citation
 
 If you use this repository, please cite:
