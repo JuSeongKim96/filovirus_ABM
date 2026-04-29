@@ -108,17 +108,6 @@ https://doi.org/10.1016/j.jtbi.2025.112315
 
 ---
 
-## 👥 Contributors
-
-- **Juseong Kim**  
-- **Kwang Su Kim**  
-- **Ayato Takada**  
-- **Yusuke Asai**  
-- **Shingo Iwami**  
-- **Seung-Woo Son**  
-- **Mi Jin Lee**
-
----
 
 ## 📬 Contact
 
